@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F1F1F1"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/buttons_layout"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="50sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:background="#F1F1F1"
+            android:paddingVertical="16dp"
+            android:id="@+id/buttons_layout">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                <Button
+                    style="@style/Numeros"
+                    android:id="@+id/button_7"
+                    android:text="@string/siete" />
+                <Button
+                    style="@style/Numeros"
+                    android:id="@+id/button_8"
+                    android:text="@string/ocho" />
+                <Button
+                    style="@style/Numeros"
+                    android:id="@+id/button_9"
+                    android:text="@string/nueve" />
+                <Button
+                    style="@style/Control"
+                    android:id="@+id/button_divide"
+                    android:text="@string/divicion"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                <Button
+                    style="@style/Numeros"
+                    android:id="@+id/button_4"
+                    android:text="@string/cuatro" />
+                <Button
+                    style="@style/Numeros"
+                    android:id="@+id/button_5"
+                    android:text="@string/cinco" />
+                <Button
+                    style="@style/Numeros"
+                    android:id="@+id/button_6"
+                    android:text="@string/seis" />
+                <Button
+                    style="@style/Control"
+                    android:id="@+id/button_multiply"
+                    android:text="@string/multipliacion" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <Button
+                    style="@style/Numeros"
+                    android:id="@+id/button_1"
+                    android:text="@string/uno" />
+                <Button
+                    style="@style/Numeros"
+                    android:id="@+id/button_2"
+                    android:text="@string/dos" />
+                <Button
+                    style="@style/Numeros"
+                    android:id="@+id/button_3"
+                    android:text="@string/tres" />
+                <Button
+                    style="@style/Control"
+                    android:id="@+id/button_plus"
+                    android:text="@string/suma" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <Button
+                    style="@style/AC"
+                    android:id="@+id/button_ac"
+                    android:text="@string/ac" />
+                <Button
+                    style="@style/Numeros"
+                    android:id="@+id/button_0"
+                    android:text="@string/cero" />
+                <Button
+                    style="@style/Numeros"
+                    android:layout_margin="12dp"
+                    android:id="@+id/button_dot"
+                    android:text="@string/dot" />
+                <Button
+                    style="@style/Control"
+                    android:id="@+id/button_minus"
+                    android:text="@string/resta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:textSize="32sp"
+                    android:textColor="@color/white"
+                    android:layout_margin="12dp"
+                    android:id="@+id/button_equals"
+                    android:backgroundTint="#24E744"
+                    android:text="@string/igual" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
